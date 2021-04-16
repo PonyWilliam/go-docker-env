@@ -1,0 +1,6 @@
+---
+cluster.name: "cluster"
+network.host: 0.0.0.0
+xpack.license.self_generated.type: trail
+xpack.securiyt.enable: true
+xpack.monitoring.collection.enabled: true

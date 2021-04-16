@@ -1,0 +1,61 @@
+# 声明版本
+version: "3"
+services:
+  # 服务名称，并且能在同一个网络进行访问
+  consul:
+    #基础镜像地址
+    image: consul
+    ports:
+      - "8500:8500"
+  hystrix-dashboard:
+    image: kennedyoliveira/hystrix-dashboard
+    ports:
+      - "9002:9002"
+  # 链路追踪
+  jaeger:
+    image: cap1573/jaeger
+    ports:
+      - "6831:6831/udp"
+      - "16686:16686"
+  # 监控系统
+  prometheus:
+    image: cap1573/prometheus
+    volumes:
+      - ./promethueus.yml:/etc/prometheus/prometheus.yml # 通过配置文件发现要被监控的
+    ports:
+      - "9090:9090"
+  # grafana,监控看板
+  grafana:
+    image: cap1573/grafana
+    ports:
+      - "3000:3000"
+  elasticsearch:
+    # 日志系统
+    image: cap1573/elasticsearch:7.9.3
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    volumes:
+      - ./config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+    environment:
+      ES_JAVA_OPTS: "-Xmx256m -Xmx256m"
+      ELASTIC_PASSWORD: xiaowei123
+      discover.type: single-node
+      network.publish_host: _eth0_
+  logstash:
+    image: cap1573/logstash:7.9.3
+    ports:
+      - "5044:5044"
+      - "5000:5000"
+      - "9600:9600"
+    volumes:
+      - ./config/logstash.yml:/usr/share/elasticsearch/config/logstash.yml
+      - ./pipeline/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+    environment:
+      ES_JAVA_OPTS: "-Xmx256m -Xmx256m"
+  kibana:
+    image: cap1573/kibana:7.9.3
+    ports:
+      - "5601:5601"
+    volumes:
+      - ./config/kibana.yml:/usr/share/kibana/config/kibana.yml

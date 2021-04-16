@@ -1,0 +1,6 @@
+---
+http.host: "0.0.0.0"
+xpack.monitoring.elasticsearch.host: ["http://elasticsearch:9200"]
+xpack.monitoring.enable: true
+xpack:monitoring:elasticsearch:username: xiaowei
+xpack:monitoring:elasticsearch:password: xiaowei123
