@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03f9d266-7d2c-458c-820c-364d4cfd159c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProductWeb/ProductWeb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../product/go-product" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProductWeb/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProductWeb/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProductWeb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProductWeb/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProductWeb/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../ProductWeb/go.sum" afterDir="false" />
@@ -54,7 +55,10 @@
       <change beforePath="$PROJECT_DIR$/../common/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/../common/config.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../common/prometheus.go" beforeDir="false" afterPath="$PROJECT_DIR$/../common/prometheus.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../product/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../product/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../product/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../product/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../product/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../product/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../product/domain/model/product.go" beforeDir="false" afterPath="$PROJECT_DIR$/../product/domain/model/product.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../product/domain/repository/product.go" beforeDir="false" afterPath="$PROJECT_DIR$/../product/domain/repository/product.go" afterDir="false" />
@@ -122,5 +126,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

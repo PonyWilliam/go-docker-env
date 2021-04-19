@@ -1,0 +1,25 @@
+version: "3.4"
+services:
+  go-product:
+    network_mode: "host"
+    image: ponywilliam/go-product
+  go-area:
+    network_mode: "host"
+    image: ponywilliam/go-area
+  go-category:
+    network_mode: "host"
+    image: ponywilliam/go-category
+  go-borrow:
+    network_mode: "host"
+    image: ponywilliam/go-borrow
+  go-borrow-log:
+    image: ponywilliam/go-borrow-log
+  work-web:
+    network_mode: "host"
+    image: ponywilliam/work-web
+  product-web:
+    network_mode: "host"
+    image: ponywilliam/product-web
+  go-work:
+    network_mode: "host"
+    image: ponywilliam/go-work

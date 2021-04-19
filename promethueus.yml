@@ -8,4 +8,4 @@ scrape_configs:
     # Override the global default and scrape targets from this job every 5 seconds.
     scrape_interval: 5s
     static_configs:
-      - targets: ['host.docker.internal:5000']
+      - targets: ['106.13.132.160:5000','106.13.132.160:5001','106.13.132.160:5002','106.13.132.160:5003','106.13.132.160:5004','106.13.132.160:5005']
